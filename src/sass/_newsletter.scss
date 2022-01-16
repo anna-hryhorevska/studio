@@ -1,0 +1,97 @@
+.newsletter{
+  padding: 126px 0 141px;
+  .newsletter__title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    text-align: center;
+    color: $headers;
+    margin-bottom: 23px;
+  }
+  .newsletter__subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: $maintext;
+  }
+  .newsletter__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .newsletter__form-input{
+      width: 334px;
+      height: 54px;
+      border: none;
+      border-bottom: 3px solid $light_grey;
+      padding: 0 0 0 18px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $grey;
+      transition: all 0.3s;
+      &:focus{
+        outline: unset;
+        border-color: $primary
+      }
+    }
+    .newsletter__form-button{
+      background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+      border: none;
+      border-bottom: 3px solid $light_grey;
+      width: 229px;
+      height: 54px;
+      font-weight: 800;
+      font-size: 12.6px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: $primary;
+      transition: all 0.3s;
+      cursor: pointer;
+      .form-button__icon{
+        width: 27px;
+        height: 27px;
+        border-radius: 100%;
+        margin-left: 20px;
+        border: 1px solid rgba(246, 16, 103, 0.5);
+        box-sizing: border-box;
+        fill: $primary;
+        svg{
+          width: 9px;
+        }
+      }
+      &:hover{
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter{
+    padding: 60px 0;
+    .newsletter__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .newsletter__subtitle {
+      font-size: 16px;
+    }
+    .newsletter__form{
+      .newsletter__form-button{
+        .form-button__title{
+          display: none;
+        }
+        .form-button__icon{
+          margin: 0;
+        }
+      }
+    }
+  }
+}

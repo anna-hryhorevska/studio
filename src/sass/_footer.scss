@@ -1,0 +1,116 @@
+.footer{
+  background: $secondary_400;
+  padding: 126px 0 124px;
+  .footer__item{
+    .footer__item-wrap{
+      display: flex;
+    }
+    .footer__item-title{
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 43px;
+      letter-spacing: 2px;
+      margin-bottom: 17px;
+      color: $white;
+    }
+    .footer__item-text{
+      font-weight: normal;
+      font-size: 16.2px;
+      line-height: 26px;
+      color: $white;
+      max-width: 166px;
+    }
+    .footer__item-title_underlined{
+      font-weight: 800;
+      font-size: 12.6px;
+      line-height: 26px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 26px;
+      position: relative;
+      padding-bottom: 8px;
+      max-width: max-content;
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: $primary;
+      }
+    }
+    .footer__item-nav{
+      .footer__nav-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        .footer__nav-li{
+          margin-bottom: 7px;
+          .footer__nav-link{
+            font-weight: bold;
+            font-size: 12.6px;
+            line-height: 28px;
+            letter-spacing: 1px;
+            color: $white;
+            fill: $white;
+            transition: all .3s;
+            text-decoration: none;
+            svg{
+              height: 12px;
+              width: 12px;
+              margin-right: 18px;
+            }
+            &:hover{
+              color: $primary;
+              fill: $primary;
+            }
+          }
+        }
+      }
+    }
+    .footer__follow-us{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 45px;
+      .footer__follow-link{
+        fill: $white;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+          fill: $primary;
+        }
+      }
+    }
+    .footer__item_left{
+      margin-right: 36px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  .footer{
+    padding: 100px 0 70px;
+    .footer__item{
+      margin-bottom: 30px;
+      .footer__item-wrap {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer{
+    padding: 60px 0 30px;
+    .footer__item{
+      .footer__item-text {
+        max-width: unset;
+      }
+    }
+  }
+}
