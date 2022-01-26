@@ -1,40 +1,40 @@
-.banner {
+.first-block {
   height: 100vh;
   background: url(../img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  .banner__content {
+  .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 100px);
     position: relative;
-    .banner__title{
+    .banner__title {
       font-weight: 900;
       font-size: 99px;
       line-height: 118px;
       color: $white;
       margin-bottom: 70px;
-      .banner__title_small{
+      .banner__title_small {
         font-weight: 800;
         font-size: 14.4px;
         line-height: 30px;
         display: block;
         margin-bottom: 18px;
       }
-      .banner__title_pink{
+      .banner__title_pink {
         color: $primary;
         display: block;
       }
     }
-    .banner__scroll{
+    .banner__scroll {
       position: absolute;
       right: 0;
       bottom: 50%;
       transform: translate(43%, -50%) rotate(90deg);
       display: flex;
       align-items: center;
-      .banner__scroll-text{
+      .banner__scroll-text {
         font-weight: 800;
         font-size: 12.6px;
         line-height: 26px;
@@ -43,7 +43,7 @@
         color: $white;
         margin-right: 25px;
       }
-      .banner__scroll-button{
+      .banner__scroll-button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,23 +54,23 @@
         border-radius: 11px;
         background-color: unset;
         cursor: pointer;
-        transition: all .3s;
-        .banner__scroll-icon{
+        transition: all 0.3s;
+        .banner__scroll-icon {
           transform: rotate(-90deg);
           fill: rgba(255, 255, 255, 0.5);
-          transition: all .3s;
+          transition: all 0.3s;
         }
-        &:hover{
+        &:hover {
           border-color: $primary;
-          .banner__scroll-icon{
+          .banner__scroll-icon {
             fill: $primary;
           }
         }
       }
-    } 
-    .banner__hint{
+    }
+    .banner__hint {
       position: relative;
-      .banner__border{
+      .banner__border {
         border: 1px solid rgba(255, 255, 255, 0.25);
         box-sizing: border-box;
         position: absolute;
@@ -79,11 +79,11 @@
         width: 58%;
         height: 108px;
       }
-      .banner__hint-wrap{
+      .banner__hint-wrap {
         display: flex;
         align-items: center;
         position: relative;
-        .banner__hint-text{
+        .banner__hint-text {
           font-weight: normal;
           font-size: 18px;
           line-height: 29px;
@@ -91,7 +91,7 @@
           color: $white;
           margin: 0 43px 0 0;
         }
-        .banner__hint-button{
+        .banner__hint-button {
           width: 48px;
           height: 48px;
           border-radius: 100%;
@@ -102,9 +102,9 @@
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          transition: all .3s;
+          transition: all 0.3s;
           fill: rgba(255, 255, 255, 0.5);
-          &:hover{
+          &:hover {
             border-color: $primary;
             fill: $primary;
           }
@@ -112,18 +112,16 @@
       }
     }
   }
-  
 }
 
-
 @media screen and (max-width: 1200px) {
-  .banner{
-    .banner__content{
-      .banner__hint{
-        .banner__hint-wrap{
+  .first-block {
+    .banner {
+      .banner__hint {
+        .banner__hint-wrap {
           .banner__hint-text {
-              font-size: 16px;
-              margin-right: 25px;
+            font-size: 16px;
+            margin-right: 25px;
           }
         }
       }
@@ -132,25 +130,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .banner{
-    .banner__content{
-      .banner__title{
+  .first-block {
+    .banner {
+      .banner__title {
         font-size: 70px;
       }
-      .banner__scroll{
-        .banner__scroll-text{
+      .banner__scroll {
+        .banner__scroll-text {
           letter-spacing: 4px;
         }
       }
-      .banner__hint{
-        .banner__border{
+      .banner__hint {
+        .banner__border {
           width: 55%;
         }
-        .banner__hint-wrap{
-          .banner__hint-text{
+        .banner__hint-wrap {
+          .banner__hint-text {
             font-size: 14px;
           }
-          .banner__hint-button{
+          .banner__hint-button {
             width: 40px;
             height: 40px;
           }
@@ -161,14 +159,14 @@
 }
 
 @media screen and (max-width: 991px) {
-  .banner{
-    .banner__content{
-      .banner__title{
+  .first-block {
+    .banner {
+      .banner__title {
         font-size: 65px;
         line-height: 90px;
       }
-      .banner__hint{
-        .banner__border{
+      .banner__hint {
+        .banner__border {
           width: 70%;
         }
       }
@@ -177,48 +175,47 @@
 }
 
 @media screen and (max-width: 767px) {
-  .banner{
+  .first-block {
     background-position: center;
-    .banner__content{
-      .banner__title{
-        font-size: 40px;
+    .banner {
+      .banner__title {
+        font-size: 50px;
         line-height: 65px;
-        margin-bottom: 50px;
+        padding-right: 30px;
       }
-      .banner__scroll{
+      .banner__scroll {
         .banner__scroll-text {
           letter-spacing: 2px;
           font-size: 10.6px;
           margin-right: 15px;
         }
-        .banner__scroll-button{
+        .banner__scroll-button {
           width: 30px;
           height: 18px;
-          .banner__scroll-icon{
-            svg{
+          .banner__scroll-icon {
+            svg {
               width: 5px;
             }
-            
           }
         }
       }
-      .banner__hint{
-        .banner__border{
-          width: 90%;
+      .banner__hint {
+        .banner__border {
+          width: 95%;
           height: 75px;
           top: -17px;
         }
-        .banner__hint-wrap{
-          .banner__hint-text{
+        .banner__hint-wrap {
+          .banner__hint-text {
             font-size: 12px;
             line-height: 20px;
             margin-right: 15px;
             max-width: 200px;
           }
-          .banner__hint-button{
+          .banner__hint-button {
             width: 30px;
             height: 30px;
-            svg{
+            svg {
               width: 10px;
             }
           }
@@ -227,5 +224,3 @@
     }
   }
 }
-
-

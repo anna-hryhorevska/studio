@@ -1,8 +1,8 @@
-<section class="banner">
+<div class="first-block">
   <div class="container">
     <include src="src/templates/header.html"></include>
   </div>
-  <div class="banner__content">
+  <section class="banner">
     <div class="container position-relative">
       <h1 class="banner__title">
         <span class="banner__title_small">What we  do?</span>
@@ -11,10 +11,10 @@
       </h1>
       <div class="banner__scroll">
         <p class="banner__scroll-text">Scroll to see more</p>
-        <button class="banner__scroll-button">
-          <div class="banner__scroll-icon">
+        <button data-href="#intro" class="banner__scroll-button flowing-scroll">
+          <span class="banner__scroll-icon">
             <include src="src/svg/arrow-to-down.html"></include>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -31,5 +31,5 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
